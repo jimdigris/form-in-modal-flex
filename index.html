@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма в модальном окно на Flexbox</title>
+    <link rel="stylesheet" href="style.css?321322">
+</head>
+
+<body>
+
+    <label for="modal__input-2" class="modal__label-button">Кнопка</label>
+
+    <div class="modal">
+        <input type="checkbox" class="modal__input" id="modal__input-2" />
+        <div class="modal__body modal__body-parent">
+            <div class="modal__body modal__body-child">
+                <div class="modal__head">
+                    <div class="modal__title">Заголовок окна</div>
+                    <label for="modal__input-2" class="modal__close-in"><img src="icons-modal-close.svg" alt="icon-close"></label>
+                </div>
+                <div class="modal__content">
+
+                    <form class="modal__form">
+                        <input class="modal__form-input" type="text" name="name" placeholder="Ваше имя">
+                        <input class="modal__form-input" type="text" name="phone" placeholder="Телефон" required>
+                        <input class="modal__form-input" type="email" name="email" placeholder="Email">
+                        <textarea class="modal__form-texarea" rows="4" name="message" placeholder="Сообщение"></textarea>
+                        <select class="modal__form-select" name="select">
+                            <option value="value1">Значение 1</option>
+                            <option value="value2" selected>Значение 2</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                        <input class="modal__form-file" type="file" name="file">
+
+                        <fieldset class="modal__form-buttons">
+                            <label class="modal__close-in-button" for="modal__input-2">Закрыть</label>
+                            <button class="modal__form-send">Отправить</button>
+                        </fieldset>
+
+                        <fieldset class="modal__form-policy">
+                            <input id="chek-policy-1" type="checkbox" name="policy" checked="checked">
+                            <label class="modal__form-chek-policy" for="chek-policy-1"></label>
+                            <label class="modal__form-label-policy" for="chek-policy-1"> Я согласен на обработку моих персональных данных *</label>
+                        </fieldset>
+                    </form>
+
+                </div>
+                <div class="modal__footer">
+                    <div class="modal__link-policy"><a href="#" target="_blank">* Политика обработки персональных данных</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- подключить при необходимости закрывать окно по клику на стороне 
+    <script src="script.js"></script>
+    -->
+</body>
+
+</html>
